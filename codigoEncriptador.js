@@ -1,36 +1,21 @@
-var letra1 = "a";
-var letra2 = "e";
-var letra3 = "i";
-var letra4 = "o";
-var letra5 = "u";
+var escritura = document.querySelector("input");
+var letras = ["a", "e", "i", "o", "u"];
+var conversiones = ["ai", "enter", "imes", "ober", "ufat"];
 
-var letras = prompt("escriba lo que quieras")
-//Prompt me escribio todo
-//Pensar en la logica de como se imprima solo lo que se escribe junto a la conversion de cada vocal
+function imprimir(frase){
+    document.write(frase);
+}
 
-var conversion1 = "ai";
-var conversion2 = "enter";
-var conversion3 = "imes";
-var conversion4 = "ober";
-var conversion5 = "ufat";
-
-
-function convertir (){
-    if( letras == letra1){
-        document.write(conversion1);
-    } else if ( letras == letra2){
-        document.write(conversion2);
-    } else if( letras == letra3){
-        document.write(conversion3);
-    } else if(letras == letra4){
-        document.write(conversion4);
-    } else if( letras == letra5){
-        document.write(conversion5);
-    } else{
-
+function convertir(){
+    for(var posicion = 0; posicion < 5; posicion++ ){
+        if(escritura.value == letras[posicion]){
+            imprimir(conversiones[posicion]);
+        }
     }
+}
+var button = document.querySelector("button");
+button.onclick = convertir;
 
- }
-//posiblemente se requiera cambiar logica de la funcion
-convertir();
+//Ahora hay que encontrar la forma que haga push o cambie la letra en el string ya que solo me hace cambios si escribo la vocal en especifico
+
 
