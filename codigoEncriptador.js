@@ -25,11 +25,11 @@ var button = document.querySelector(".buton-entrada");
 button.onclick = encriptar;
 
 function desencriptar(){
-    var escritura = document.querySelector(".input-salida").value;
+    var escritura = document.querySelector(".input-entrada").value;
     var escrituraEncriptada = escritura.replace(conversiones[1], letras[1]).replace(conversiones[2], letras[2]).replace(conversiones[3], letras[3]).replace(conversiones[0], letras[0]).replace(conversiones[4], letras[4]);
     for (var posicion = 0; posicion < 5; posicion++){
        if(letras[posicion] = conversiones[posicion]){
-            document.querySelector(".input-salida").value = escrituraEncriptada; 
+            document.querySelector(".input-entrada").value = escrituraEncriptada; 
             imprimir(escrituraEncriptada);        
             break;
        } 
