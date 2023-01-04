@@ -20,7 +20,7 @@ button.onclick = encriptar;
 
 function desencriptar(){
     var escritura = document.querySelector(".input-entrada").value;
-    var escrituraEncriptada = escritura.replace(conversiones[0], letras[0]).replace(conversiones[1], letras[1]).replace(conversiones[2], letras[2]).replace(conversiones[3], letras[3]).replace(conversiones[4], letras[4]);
+    var escrituraEncriptada = escritura.replace(conversiones[1], letras[1]).replace(conversiones[2], letras[2]).replace(conversiones[3], letras[3]).replace(conversiones[0], letras[0]).replace(conversiones[4], letras[4]);
     for (var posicion = 0; posicion < 5; posicion++){
        if(conversiones[posicion] = letras[posicion]){
             document.querySelector(".text-salida").value = escrituraEncriptada;       
@@ -33,6 +33,16 @@ function desencriptar(){
 
 var button = document.querySelector(".buton-salida");
 button.onclick = desencriptar;
+
+function copiar(){
+    var copiarTexto = document.querySelector(".text-salida").value;
+    navigator.clipboard.writeText(copiarTexto);
+}
+
+
+var button = document.querySelector(".buton-copiar")
+button.onclick = copiar;
+
  //haciendo pull
 //Ahora hay que encontrar la forma que haga push o cambie la letra en el string ya que solo me hace cambios si escribo la vocal en especifico
 
