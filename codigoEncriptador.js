@@ -33,7 +33,7 @@ function desencriptar(){
 
 var button = document.querySelector(".buton-salida");
 button.onclick = desencriptar;
-
+ //haciendo pull
 //Ahora hay que encontrar la forma que haga push o cambie la letra en el string ya que solo me hace cambios si escribo la vocal en especifico
 
 
