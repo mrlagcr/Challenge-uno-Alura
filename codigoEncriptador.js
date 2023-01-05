@@ -4,9 +4,9 @@ var conversiones = ["ai", "enter", "imes", "ober", "ufat"];
 
 function encriptar(){
     var escritura = document.querySelector(".input-entrada").value;
-    var escrituraEncriptada = escritura.replace(letras[1], conversiones[1]).replace(letras[2], conversiones[2]).replace(letras[3], conversiones[3]).replace(letras[0], conversiones[0]).replace(letras[4], conversiones[4]);
+    var escrituraEncriptada = escritura.replace(/e/img, conversiones[1]).replace(/i/img, conversiones[2]).replace(/o/img, conversiones[3]).replace(/a/img, conversiones[0]).replace(/u/img, conversiones[4]);
     for (var posicion = 0; posicion < 5; posicion++){
-       if(letras[posicion] = conversiones[posicion]){
+       if(escritura = conversiones[posicion]){
             document.querySelector(".text-salida").value = escrituraEncriptada;
             break;
        } 
@@ -20,9 +20,9 @@ button.onclick = encriptar;
 
 function desencriptar(){
     var escritura = document.querySelector(".input-entrada").value;
-    var escrituraEncriptada = escritura.replace(conversiones[1], letras[1]).replace(conversiones[2], letras[2]).replace(conversiones[3], letras[3]).replace(conversiones[0], letras[0]).replace(conversiones[4], letras[4]);
+    var escrituraEncriptada = escritura.replace(/enter/img, letras[1]).replace(/imes/img, letras[2]).replace(/ober/img, letras[3]).replace(/ai/img, letras[0]).replace(/ufat/img, letras[4]);
     for (var posicion = 0; posicion < 5; posicion++){
-       if(conversiones[posicion] = letras[posicion]){
+       if(letras[posicion] = escritura){
             document.querySelector(".text-salida").value = escrituraEncriptada;       
             break;
        } 
