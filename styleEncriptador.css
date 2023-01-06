@@ -1,0 +1,21 @@
+body{
+    background: #050E25;
+}
+.encabezado{
+    padding: 20px 0;
+    width: 940px;
+    position: relative;
+    margin: 0 auto;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.encabezado h1{
+    font-size: 64px;
+    color: white;
+}
+.encabezado img{
+    width: 20%;
+    margin-top: 20px;
+    margin-left: 20px;
+}
