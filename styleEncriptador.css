@@ -19,3 +19,29 @@ body{
     margin-top: 20px;
     margin-left: 20px;
 }
+.items-secciones h2{
+    color: white;
+    font-size: 30px;
+    padding-left: 30px;
+    padding-bottom: 20px;
+}
+.items-secciones{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+.input-entrada{
+    display: block;
+    margin:  0 20px;
+    padding: 10px 25px;
+    border-radius: 20px;
+    border-color: red;
+
+}
+.text-salida{
+    display: block;
+    margin:  0 20px;
+    padding: 10px 25px;
+    border-radius: 20px;
+    border-color: red;
+}

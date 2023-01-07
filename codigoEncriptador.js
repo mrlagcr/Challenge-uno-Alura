@@ -15,7 +15,7 @@ function encriptar(){
     
 }
 
-var button = document.querySelector(".buton-entrada");
+var button = document.querySelector(".boton-encriptado");
 button.onclick = encriptar;
 
 function desencriptar(){
@@ -31,7 +31,7 @@ function desencriptar(){
     
 }
 
-var button = document.querySelector(".buton-salida");
+var button = document.querySelector(".boton-desencriptado");
 button.onclick = desencriptar;
 
 function copiar(){
@@ -40,7 +40,7 @@ function copiar(){
 }
 
 
-var button = document.querySelector(".buton-copiar")
+var button = document.querySelector(".boton-copiar")
 button.onclick = copiar;
 
  //haciendo pull
