@@ -1,11 +1,12 @@
 body{
     background: #050E25;
+    font-family: 'Inter', sans-serif;
 }
 .encabezado{
     padding: 20px 0;
     width: 940px;
     position: relative;
-    margin: 0 auto;
+    margin: auto 420px;
     display:flex;
     justify-content: center;
     align-items: center;
@@ -13,35 +14,118 @@ body{
 .encabezado h1{
     font-size: 64px;
     color: white;
+    border: 2px solid #ef1616;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    text-align: center;
 }
 .encabezado img{
-    width: 10%;
-    margin-top: 20px;
-    margin-left: 20px;
+    width: 15%;
+    margin-top: 1px;
+    margin-left: 23px;
 }
-.items-secciones h2{
+.secciones{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.seccion-input h2{
     color: white;
     font-size: 30px;
     padding-left: 30px;
     padding-bottom: 20px;
 }
-.items-secciones{
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-}
 .input-entrada{
-    display: block;
+    display: inline-block;
     margin:  0 20px;
     padding: 10px 25px;
     border-radius: 20px;
     border-color: red;
 
 }
+.input-entrada::placeholder{
+    text-align: center;
+    font-size: 30px;
+    padding-top: 160px;
+}
+.seccion-output{
+    margin-top: 124px;
+}
 .text-salida{
-    display: block;
+    display: inline-block;
     margin:  0 20px;
     padding: 10px 25px;
     border-radius: 20px;
     border-color: red;
+}
+.text-salida::placeholder{
+    text-align: center;
+    font-size: 30px;
+    padding-top: 170px;
+}
+.seccion-botones{
+    display: flex;
+    align-items: stretch;
+    flex-direction: column;
+    margin: -231px;
+    margin-left: 26px;
+}
+.boton-encriptado{
+    width: 40%;
+    margin-top: 20px;
+    margin-right: 20px;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: antiquewhite;
+    background: red;
+    border-radius: 10px;
+    border: none;
+}
+.boton-encriptado:hover{
+    transform: scale(1.20);
+    transition: 1s all;
+}
+.boton-desencriptado{
+    width: 40%;
+    margin-top: 20px;
+    margin-right: 309px;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: antiquewhite;
+    background: red;
+    border-radius: 10px;
+    border: none;
+}
+.boton-desencriptado:hover{
+    transform: scale(1.20);
+    transition: 1s all;
+}
+.boton-copiar{
+    width: 40%;
+    margin-top: 20px;
+    margin-left: 104px;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: antiquewhite;
+    background: red;
+    border-radius: 10px;
+    border: none;
+}
+.boton-copiar:hover{
+    transform: scale(1.20);
+    transition: 1s all;
+}
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+.creador{
+    font-size: 18px;
+    font-weight: bold;
+    color: antiquewhite;
+
 }

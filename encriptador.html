@@ -6,25 +6,40 @@
     <title>Encriptador/Desencriptador CRC</title>
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="styleEncriptador.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;700&display=swap');
+    </style>
 </head>
 <body>
+    
     <section>
         <header class="encabezado">
             <h1> Encriptador/Desencriptador CRC</h1>
             <img src="./Imagenes challenge/costa-rica.png">
         </header>
     </section>
-    <section class="items-secciones">
-        <h2>Escriba un mensaje:</h2>
-        <textarea class="input-entrada" style="width: 357px; height: 419px;"></textarea>
-        <button class="boton-encriptado">Encriptar</button>
-        <button class="boton-desencriptado">Desencriptar</button>
-        <textarea class="text-salida" style="width: 357px; height: 419px;"></textarea>
-        <button class="boton-copiar">copiar</button>
+    <section class="secciones">
+        <section class="seccion-input">
+           <h2>Escriba un mensaje:</h2>
+            <textarea class="input-entrada" style="width: 357px; height: 419px;" required placeholder="Por favor ingresar el Mensaje"></textarea>
+        </section>
+        <section class="seccion-botones">
+            <button class="boton-encriptado">Encriptar</button>
+            <button class="boton-desencriptado">Desencriptar</button>
+        </section>
+        <section class="seccion-output">
+            <textarea class="text-salida" style="width: 357px; height: 419px;" required placeholder="Aun no hay un Mensaje"></textarea>
+            <button class="boton-copiar">copiar</button>
+        </section>
     </section>
     <section>
         <script src="./codigoEncriptador.js"></script>
     </section>
+    <footer class="footer">
+        <div>
+            <p class="creador">El creador del Encriptador y Desencriptador es Brian Corrales Casasola</p>
+        </div>
+    </footer>
     
 
     
